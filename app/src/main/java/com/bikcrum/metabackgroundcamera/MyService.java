@@ -31,7 +31,10 @@ public class MyService extends Service {
 
         mediaPlayer = MediaPlayer.create(this, R.raw.silence01s);
 
-        mediaPlayer.start();
+        if (mediaPlayer != null) {
+            mediaPlayer.setLooping(true);
+            mediaPlayer.start();
+        }
 
         return START_STICKY;
     }

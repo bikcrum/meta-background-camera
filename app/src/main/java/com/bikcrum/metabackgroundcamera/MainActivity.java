@@ -142,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
-
     @Override
     protected void onResume() {
         handler.post(runnable);

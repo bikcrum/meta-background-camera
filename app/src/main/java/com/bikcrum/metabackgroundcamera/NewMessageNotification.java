@@ -88,7 +88,7 @@ public class NewMessageNotification {
         NotificationManager nm = (NotificationManager) context
                 .getSystemService(Context.NOTIFICATION_SERVICE);
 
-        nm.notify(NOTIFICATION_TAG, 0, builder.build());
+        nm.notify(NOTIFICATION_TAG, id, builder.build());
     }
 
     public static void cancel(Context context, int id) {
